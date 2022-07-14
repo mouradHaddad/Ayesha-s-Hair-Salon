@@ -1,0 +1,506 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.8;
+}
+a > img{
+    background-color: #000;
+}
+.fas{
+    color: aliceblue;
+    cursor: pointer;
+}
+span{
+    display: block;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: o.2;
+}
+.fa{
+    background-color: aliceblue;
+    color: #020202;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+.title{
+    
+}
+.title h1{
+    margin: 0 1rem;
+    text-transform: capitalize;
+    letter-spacing: .6rem;
+    font-size: 5rem;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 400;
+
+}
+.titleUnderline{
+    margin: 0 1rem;
+    width: 10rem;
+    height: .4rem;
+    display: block;
+    border-radius: 50px;
+    background-color: #000;
+}
+.heroContainer, .serviceSection, .stuff, .bookContainer{
+    height: 100vh;
+    
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/*********header****************************/
+header {
+    background: #020202;
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    opacity: .6;
+    z-index: 1020;
+
+}
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.logo, .bookLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+
+}
+header nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.iconContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
+
+/************main**********************/
+.heroContainer{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hero{
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.subHero{
+    margin: 0 22.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+}
+.subHero h1{
+    font-size: 5.5rem;
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+    line-height: 1.1;
+}
+.subHero p{
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+}
+.openingTime{
+    position: absolute;
+    right: 1rem;
+    top: 1;
+    color: #fff;
+    transform-origin: 100% 0%;
+    margin-top: 0;
+    transform: rotate(90deg) translateX(100%);
+    font-weight: 600;
+}
+.newCustomerOffer{
+    margin: 1rem 22.3rem;
+    padding: 3rem 2rem;
+    position: relative;
+    font-size: 1rem;
+    background-color: #020202;
+    width: 25%;
+    height: 20rem;
+    min-width: 10rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 100;
+    justify-self: center;
+}
+.offerInfo{
+    font-size: 1.5rem;
+}
+.discountVal{
+    font-size: 2.4rem;
+}
+.btnBook .linkButton{
+    background-color: aliceblue;
+    color: #020202;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+.btnBook .linkButton .fas{
+    color: #020202;
+    padding-top: 0.55rem;
+}
+.hero_background{
+    position: absolute;
+    bottom: 0;
+    right: 1;
+    z-index: 1;
+    transform-origin: 100% 100%;
+    
+    
+}
+
+.linkButton {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background: black;
+    width: fit-content;
+    text-transform: uppercase;
+    gap: .5rem;
+}
+.fas{
+    padding-top: .8rem;
+}
+/********Endmain*******/
+/*******serviceSection***********/
+.serviceSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.sections{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.subServiceSection{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2.4rem;
+}
+.subServiceSection p{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.subServiceSection img{
+    width: 10rem;
+    height: 10rem;
+}
+
+/*******EndserviceSection***********/
+/*******Stuff***********/
+.stuff{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.cardTitle{
+    width: 60%;
+    height: 8rem;
+    background-color: #020202 ;
+    color: aliceblue;
+    text-align: center;
+}
+.cardTitle h4{
+    font-size: 1.3rem;
+}
+/*******EndStuff***********/
+/*******book***********/
+.bookContainer{
+    background-image: url('../images/Booking-Bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.row{
+    margin: 1rem;
+}
+.bookContainer .title {
+    margin-right: 15rem;
+}
+.bookForm form input, .bookForm form textarea{
+    border : none;
+    padding: 12px 18px 12px 4px;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: #020202;
+
+}
+.btnContainer .bookBtn{
+    margin-left: .8rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #020202;
+    color: aliceblue;
+    border-radius: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+/*******Endbook***********/
+
+/************footer*******************/
+footer {
+    background-color: #000;
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+
+}
+footer > *{
+    font-family: 'Cinzel', sans-serif;
+}
+.hidden{
+    display: none;
+}
+/*footer sectionOne*/
+.sectionOne{
+    width: 70%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.sectionOne  h3 a{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+/*footer firstSubsectionOne*/
+.firstSubSectionOne{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 1.4rem;
+}
+
+.firstSubSectionOne h3::after{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px 0 25px 0;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.socials a{
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer secondSubsectionOne*/
+.secondSubSectionOne span{
+    color: #fff;
+}
+.secondSubSectionOne h3::after{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px 0 25px 0;
+}
+.secondSubSectionOne .hours::before{
+    content: "\e082";
+    font-family: 'Font Awesome 5 Free';
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+.secondSubSectionOne .phone::before{
+    content: "\f095";
+    font-family: 'Font Awesome 5 Free'; 
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+.secondSubSectionOne .location::before{
+    content: "\f124";
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+.secondSubSectionOne .email::before{
+    content: "\f0e0";
+    font-family: 'Font Awesome 5 Free';
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    font-size: 1.3rem ;
+}
+
+
+
+.thirdSubSectionOne h3::after{
+    display: block;
+    content: "";
+    width: 3rem;
+    height: .4rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px 0 25px 0;
+}
+.lookbookImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.lookbookImg img{
+    width: 7rem;
+    height: 7rem;
+   
+
+}
+/*footer sectionTwo*/
+.sectionTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    border-top: .1rem solid #ccc;
+
+}
+.sectionTwo ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.sectionTwo p{
+    text-align: center;
+}
+.sectionTwo ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: 3rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #020202; /* Set a background color */
+    color: aliceblue; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1.8rem; /* Some padding */
+    border-radius: 1.2rem; /* Rounded corners */
+    font-size: 2rem; /* Increase font size */
+  }
