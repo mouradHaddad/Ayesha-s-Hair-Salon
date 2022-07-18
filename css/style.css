@@ -294,6 +294,38 @@ header nav ul li a{
     font-size: 1.3rem;
 }
 /*******EndStuff***********/
+/*******LookBook***********/
+.lbContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.lookBookContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 120rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+.lookBookContainer .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.lookBookGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.lookBookGrid img{
+    width: 34rem;
+    height: 34rem;
+}
+
+/*******End LookBook***********/
 /*******book***********/
 .bookContainer{
     background-image: url('../images/Booking-Bg.jpg');
