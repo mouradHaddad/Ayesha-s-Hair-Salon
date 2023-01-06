@@ -31,3 +31,26 @@ function topFunction() {
 })
 
 }
+
+//Hamburger Menu
+const hambugerMenu = document.querySelector('.menuButtonContainer');
+hambugerMenu.addEventListener('click', handleMenu);
+const navBar = document.querySelector('.menu');
+const hideNav = document.querySelector('.hide-nav');
+const menuContainer = document.querySelector('.hamberMenuNav');
+const normalNav = document.querySelector('.normalNav');
+function handleMenu(){
+    if(navBar.classList.contains('hide-nav')){
+        navBar.classList.remove('hide-nav');
+        normalNav.style.display = 'none';
+        menuContainer.style.display = 'flex';
+    }else{
+        navBar.classList.add('hide-nav');
+        normalNav.style.display = 'none';
+        menuContainer.style.display = 'block';
+    }
+    
+    
+    
+    
+}

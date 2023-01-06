@@ -13,42 +13,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/light_logo.png" alt="the is the Ayesha Logo">
-            </a>
-            <ul>
-                <li>
-                    <a href="#home" aria-current="page" class="">Home</a>
-                </li>
-                <li>
-                    <a href="#services" aria-current="page" class="">Services</a>
-                </li>
-                <li>
-                    <a href="#staff" aria-current="page" class="">Our Staff</a>
-                </li>
-                <li>
-                    <a href="lookbook.html" aria-current="page" class="">LookBook</a>
-                </li>
-                <li>
-                    <a href="contact.html" aria-current="page" class="">Contact</a>
-                </li>
-                <li class="iconContainer">
-                    <span><i class="fas fa-search"></i></span>
-                    <span><i class="fas fa-shopping-bag"></i></span>
-                    <form action="" class="hidden">
-                        <input type="text" placeholder="..search">
-                        <button type="button"><i class="fas fa-search"></i></button>
-                    </form>
-                </li>
-            </ul>
-            <ul class="bookLink">
-                <li>
-                    <a href="#bookNow">... BOOK ONLINE</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="normalMenu">
+            
+            
+            <nav class="normalNav">
+                <a href="index.html" class="logo">
+                    <img src="images/light_logo.png" alt="the is the Ayesha Logo">
+                </a>
+                <ul class="menu hide-nav">
+                    <li>
+                        <a href="#home" aria-current="page" class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" aria-current="page" class="">Services</a>
+                    </li>
+                    <li>
+                        <a href="#staff" aria-current="page" class="">Our Staff</a>
+                    </li>
+                    <li>
+                        <a href="lookbook.html" aria-current="page" class="">LookBook</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-current="page" class="">Contact</a>
+                    </li>
+                    <li class="iconContainer">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <form action="" class="hidden">
+                            <input type="text" placeholder="..search">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="bookLink">
+                    <li>
+                        <a href="#bookNow">... BOOK ONLINE</a>
+                    </li>
+                </ul>
+            </nav>
+           
+            <label for="menuToggle" class="menuButtonContainer">
+                <i class="fas fa-solid fa-bars"></i>
+                <i class="fa-thin fa-x"></i>
+            </label>
+        </div>
+        
     </header>
+   
     <main class="heroContainer" id="home">
         <section class="hero">
             <section class="subHero">
@@ -64,10 +75,6 @@
                 </p>
                 <div class="btnBook"><a href="#bookNow" class="linkButton"><i class="fas fa-arrow-right" aria-hidden="true"></i>Book Online</a></div>
             </section>
-        </section>
-        <section class="carouselButtons">
-            <button class="carousel_button"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
-            <button class="carousel_button"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
         </section>
         <img class="hero_background" src="images/Home-Banner-01.jpg" alt="Hair Salon background!">
     </main>
@@ -194,7 +201,7 @@
             </section>
         </section>
         <section class="sectionTwo">
-            <p>© Copyrights 2020 Ayesha Design by dropletthemes</p>
+            <p>© Copyrights 2022 Moe Design by Haddad Mourad</p>
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="book.html">Book your visit</a></li>

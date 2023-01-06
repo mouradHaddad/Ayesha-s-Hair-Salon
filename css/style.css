@@ -580,3 +580,277 @@ footer > *{
     justify-content: center;
     align-items: center;
 }
+
+
+/* media-queries */
+@media screen and (max-width : 960px) {
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    #staff{
+        height: 105rem;
+
+    }
+    #home, #services,  #bookNow{
+        height: 55rem;
+    }
+
+    /****header*****/
+header{
+    width: 100vw;
+}
+.navBar{
+    display: none;
+}
+    
+/************main**********************/
+
+.heroContainer{
+    width: 100vw;
+    position: relative;
+}
+.hero{
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.subHero{
+    margin: 3.7rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+}
+.subHero h1{
+    font-size: 2.5rem;
+    color: var(--aditional-color);
+    font-family: 'Cormorant SC', serif;
+    line-height: 1.1;
+}
+.subHero p{
+    color: var(--secondary-color);
+    font-family: 'Cormorant SC', serif;
+}
+.openingTime{
+    position: absolute;
+    right: 1rem;
+    top: 1;
+    color: var(--secondary-color);
+    transform-origin: 100% 0%;
+    margin-top: 0;
+    transform: rotate(90deg) translateX(100%);
+    font-weight: 600;
+}
+.newCustomerOffer{
+    margin: .5rem 2.3rem;
+    padding: 2rem 2rem;
+    position: relative;
+    font-size: .6rem;
+    background-color: var(--primary-color);
+    width: 20%;
+    height: 15rem;
+    min-width: 10rem;
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 100;
+    justify-self: center;
+}
+.offerInfo{
+    font-size: 1rem;
+}
+.discountVal{
+    font-size: 1.2rem;
+}
+.btnBook .linkButton{
+    background-color: var(--aditional-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    font-weight: 700;
+}
+.btnBook .linkButton .fas{
+    color: var(--primary-color);
+    padding-top: 0.55rem;
+}
+.hero_background{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    
+    
+}
+.hero_background img{
+    object-fit: scale-down;
+}
+
+.linkButton {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: var(--secondary-color);
+    width: fit-content;
+    text-transform: uppercase;
+    gap: .5rem;
+}
+.fas{
+    padding-top: .8rem;
+}
+/********Endmain*******/    
+
+/*******serviceSection***********/
+.serviceSection{
+    width: 100vw;
+    height: 100vh;
+    margin: 2rem 1rem;
+    padding: 0;
+    display: grid;
+}
+.sections{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: .5rem;
+}
+.subServiceSection{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    gap: .5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.subServiceSection p{
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+}
+.subServiceSection img{
+    width: 5rem;
+    height: 5rem;
+}
+
+/*******EndserviceSection***********/
+
+/*******Stuff***********/
+.stuff{
+    display: grid;
+    margin: 4rem 1rem;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card img{
+    width: 20rem;
+}
+.cardTitle{
+    
+    height: 5rem;
+    background-color: var(--primary-color);
+    color: var(--aditional-color);
+    text-align: center;
+}
+.cardTitle h4, p{
+    font-size: 0.8rem;
+}
+/*******EndStuff***********/
+/*******Footer***********/
+footer{
+    grid-template-rows: 4fr, 1fr ;
+    height: 100rem ;
+}
+.sectionOne{
+    width: 80%;
+    grid-template-columns: 1fr;
+    font-size: 1.5rem;
+}
+.sectionOne h3, p{
+    font-size: 2.2rem;
+
+}
+.info{
+    font-size: 2.2rem;
+}
+.lookbookImg img{
+    width: 12rem;
+    height: 12rem;
+}
+/*******EndFooter***********/
+}
+
+/****Smartphones needed adjustments design****/
+@media screen and (max-width: 500px) {
+    #home, #bookNow, #staff, #services{
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+    .heroContainer img{
+        width: 100vw !important;
+        height: 600px !important;
+    }
+    .subServiceSection p {
+        font-size: 1.4rem;
+    }
+    .card img{
+        width: 10rem;
+    }
+    .bookForm{
+        width: 100vw;
+
+}
+footer{
+    grid-template-rows: 4fr, 1fr ;
+    height: 100rem ;
+}
+.sectionOne{
+    height: 85%;
+    
+
+}
+.sectionOne  *{
+    font-size: 0.8rem;
+}
+
+.lookbookImg img{
+    width: 7rem;
+    height: 7rem;
+}
+.sectionTwo{
+    height: 15rem;
+    grid-template-columns: 1fr;
+}
+.sectionTwo h3, p{
+    font-size: 1rem;
+}
+.sectionTwo ul{
+    
+    font-size: 1.2rem;
+}
+}
+/****End of Smartphones needed adjustments design****/
