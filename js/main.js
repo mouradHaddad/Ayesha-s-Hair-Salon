@@ -32,25 +32,19 @@ function topFunction() {
 
 }
 
-//Hamburger Menu
-const hambugerMenu = document.querySelector('.menuButtonContainer');
-hambugerMenu.addEventListener('click', handleMenu);
-const navBar = document.querySelector('.menu');
-const hideNav = document.querySelector('.hide-nav');
-const menuContainer = document.querySelector('.hamberMenuNav');
-const normalNav = document.querySelector('.normalNav');
-function handleMenu(){
-    if(navBar.classList.contains('hide-nav')){
-        navBar.classList.remove('hide-nav');
-        normalNav.style.display = 'none';
-        menuContainer.style.display = 'flex';
-    }else{
-        navBar.classList.add('hide-nav');
-        normalNav.style.display = 'none';
-        menuContainer.style.display = 'block';
-    }
-    
-    
-    
-    
+
+
+
+//Hamburger-Menu-Behaviour
+const hamMenu = document.querySelector('.hamMenu')
+const btn = document.querySelector('#hamBtn');
+btn.addEventListener('click', handleHam);
+const i = document.querySelector('#x')
+
+function handleHam(e){
+console.log(e);
+hamMenu.classList.toggle('dispMenu');
+i.classList.toggle('fa-bars');
+i.classList.toggle('fa-x');
+
 }
